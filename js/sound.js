@@ -246,7 +246,7 @@ function bgAudioUp(audio) {
   }
   // Check if the music is paused, and if so, play it
   // audio.play();
-  if (audio.pause()) {
+  if (!audio.playing()) { //audio.pause()
     audio.play();
   }
 }
